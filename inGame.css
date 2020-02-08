@@ -13,7 +13,7 @@ body{
 
 .rolesBox{
   border-style: solid;
-  border-color: #black;
+  border-color: black;
   border-width: 31%;
   width: 250px;
   background-color: #493A37;
@@ -36,7 +36,12 @@ body{
   display:block;
   text-align: center;
   margin: 10px auto;
+  transition-duration: 0.4s;
+}
 
+.rolesBoxButton:hover{
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 
 .center{
