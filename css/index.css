@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rye', cursive;
+}
+
+body {
+    background-color: #6b1900;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+.game-options {
+    margin: 25px;
+    font-size: 50px;
+    display: inline-block;
+}
+
+a:hover {
+    color: black;
+    /*text-shadow: 0px 0px 3px white;*/
+}
+
+#title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /*text-shadow: 0px 0px 5px white;*/
+    color: burlywood;
+    font-size: 100px;
+    padding-top: 45px;
+}
+
+#name {
+    display: block;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 18%;
+    font-family: 'Rye', cursive;
+    font-size: 32px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+::placeholder {
+    /* Name option colour */
+    color: white;
+}
+
+.buttons {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background: transparent;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    background-color: #989fce;
+    width: 20%;
+}
+
+#start-link {
+    padding-top: 12px;
+    margin-bottom: 50px;
+}
+
+div {
+    text-align: center;
+}
