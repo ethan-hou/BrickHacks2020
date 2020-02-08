@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
+
+body{
+  background-color:#6b1900;
+}
+
+.titleOfGame{
+  font-family:'Rye', cursive;
+  text-align:center;
+  font-size: 50px;
+  color:burlywood;
+}
+
+.rolesBox{
+  border-style: solid;
+  border-color: #black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+}
+
+.rolesBoxText{
+  text-align: center;
+  color:burlywood;
+  font-size: 25px;
+}
+
+.rolesBoxButton{
+  background-color: #6b1900;
+  color:burlywood;
+  text-decoration: none;
+  border-style: solid;
+  border-radius:5px;
+  display:block;
+  text-align: center;
+  margin: 10px auto;
+
+}
+
+.center{
+  text-align: center
+}
