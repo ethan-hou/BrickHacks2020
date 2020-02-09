@@ -13,8 +13,6 @@ app.use(function(req, res, next) {
 //     res.send('<h1>Hello world</h1>');    
 //   });
 
-socket.origins(["medievalrule.herokuapp.com"])
-
 // App setup
 http.listen(process.env.PORT || 2020, function(){
     console.log('Server is listening to requests on port 2020')
@@ -25,7 +23,7 @@ app.use(express.static('./Chat/public'));
 
 // Socket setup
 var io = socket(http, {
-  origins: "https://medievalrule.herokuapp.com:*"
+  origins: "https://medievalrule.herokuapp.com:" + process.env.PORT 
 });
 players = {};
 
