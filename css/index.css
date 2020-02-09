@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rye&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rye', cursive;
+    font-family: "Rye", cursive;
 }
 
 body {
@@ -43,7 +43,7 @@ a:hover {
     border: none;
     border-bottom: 1px solid white;
     width: 18%;
-    font-family: 'Rye', cursive;
+    font-family: "Rye", cursive;
     font-size: 32px;
     color: white;
     margin: 0 auto;
