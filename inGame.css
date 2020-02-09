@@ -14,20 +14,20 @@ body{
 .rolesBox{
   border-style: solid;
   border-color: black;
-  border-width: 31%;
-  width: 250px;
+  width: 145px;
   background-color: #493A37;
   margin: 4px;
   padding: 5px;
   display: block;
   float:left;
   border-radius:15px;
+  position:relative;
 }
 
 .rolesBoxText{
   text-align: center;
   color:burlywood;
-  font-size: 25px
+  font-size: 25px;
 }
 
 .rolesBoxButton1{
@@ -57,6 +57,7 @@ body{
   font-size:20px;
   font-family:'Rye', cursive;
 }
+
 .rolesBoxButton3{
   background-color: #6b1900;
   color:burlywood;
@@ -94,7 +95,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -107,7 +107,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -120,7 +119,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -133,7 +131,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -146,7 +143,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -159,7 +155,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -172,7 +167,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -185,7 +179,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -198,7 +191,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -211,7 +203,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -224,7 +215,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -237,7 +227,6 @@ body{
   display: none;
   border-style: solid;
   border-color: black;
-  border-width: 31%;
   width: 250px;
   background-color: #493A37;
   margin: 4px;
@@ -245,3 +234,20 @@ body{
   float:left;
   border-radius:15px;
 }
+
+/* #box{
+  width:100px;
+  height:100px;
+  position:relative;
+  background-color:red;
+  animation-name: example;
+  animation-duration:4s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+} */
