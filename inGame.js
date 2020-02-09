@@ -266,3 +266,5 @@ function myFunctionMadHatter() {
   }
   currentOpen = newOpen;
 }
+
+var chat;

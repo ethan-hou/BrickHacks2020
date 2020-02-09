@@ -91,6 +91,14 @@ body{
   text-align: center
 }
 
+.container{
+  display:inline;
+  float:left;
+  height: 88%;
+  border-style: hidden;
+  width:275px;
+}
+
 #description_King{
   display: none;
   border-style: solid;
@@ -235,19 +243,81 @@ body{
   border-radius:15px;
 }
 
-/* #box{
-  width:100px;
-  height:100px;
+.charText{
+  text-align: center;
+  color:burlywood;
+  font-size: 15px;
+  font-family:'Rye', cursive;
+}
+
+.chat{
+  display: inline;
+  float: left;
+  border-style: solid;
+  border-color: black;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  display: block;
+  border-radius:15px;
   position:relative;
-  background-color:red;
+  width:253px;
+  min-height:151px;
+  max-height: 595px;
+}
+
+.playerList{
+  border-style: solid;
+  border-color: black;
+  width: 145px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  display: block;
+  float:left;
+  border-radius:15px;
+  float:right;
+}
+
+.buttonList{
+  background-color: #6b1900;
+  color:burlywood;
+  text-decoration: none;
+  border-style: solid;
+  border-radius:5px;
+  display:block;
+  text-align: center;
+  margin: 10px auto;
+  transition-duration: 0.4s;
+  font-size:20px;
+  font-family:'Rye', cursive;
+}
+
+.buttonList:hover{
+  background-color:#29660f;
+}
+
+#box1{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
   animation-name: example;
-  animation-duration:4s;
+  animation-duration: 4s;
+  left:600px;
+}
+
+#box2{
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 4s;
+  left:700px;
 }
 
 @keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-} */
+  from {top: 100px;}
+  to {top: 300px; position: fixed;}
+}
