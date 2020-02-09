@@ -3,7 +3,12 @@ var app = require('express')();
 var http = require('http').createServer(app);
 var socket = require('socket.io');
 var cors = require('cors');
-app.use(cors({origin: "medievalrule.herokuapp.com"}))
+// app.use(cors({origin: "medievalrule.herokuapp.com"}))
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "https://medievalrule.herokuapp.com/"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 // app.get('/', function(req, res){
 //     res.send('<h1>Hello world</h1>');    
 //   });
