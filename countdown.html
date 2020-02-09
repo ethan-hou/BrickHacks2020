@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    function countDown(seconds, elem) {
+        var element = document.getElementById(elem);
+        element.innerHTML = seconds;
+        if (seconds < 1) {
+            clearTimeout(timer);
+            element.innerHTML = '<h2> Countdown Complete! </h2>';
+            element.innerHTML += '<a href= "#"> Click here now </a>';
+        }
+        seconds--;
+        var timer = setTimeout('countDown(' + seconds + ',"' + elem + '")', 1000);
+    }
+</script>
+<div id="status"></div>
+<script type="text/javascript">
+    countDown(5, "status")
+</script>

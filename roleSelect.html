@@ -10,12 +10,10 @@
 </head>
 
 <body>
-    <meta http-equiv="refresh" content="5; url=inGame.html">
+    <meta http-equiv="refresh" content="10; url=inGame.html">
     <div>
         <h1 id="title">Medieval Rule</h1>
         <h2 id="sub-title">Selecting role:</h2>
-        <!-- <a href="join.html">JOIN</a>
-        <a href="host.html">HOST</a> -->
 
         <!-- after certain time, more so when the role generator is finished, auto change page to next page
 
@@ -23,6 +21,21 @@
         -->
     </div>
 </body>
-<script type="text/javascript" src="roleSelect.js"></script>
+<script type="text/javascript">
+    function countDown(seconds, elem) {
+        var element = document.getElementById(elem);
+        element.innerHTML = seconds;
+        if (seconds < 1) {
+            clearTimeout(timer);
+            element.innerHTML = '<h2> Role </h2>';
+        }
+        seconds--;
+        var timer = setTimeout('countDown(' + seconds + ',"' + elem + '")', 1000);
+    }
+</script>
+<div id="status"></div>
+<script type="text/javascript">
+    countDown(5, "status")
+</script>
 
 </html>
