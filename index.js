@@ -36,8 +36,8 @@ io.on('connection', function(socket) {
     console.log(players)
 //Handle chat event
   socket.on('chat', function(data){
-     io.sockets.emit('chat', data);
-    // io.broadcast.emit('chat', data);
+    //  io.sockets.emit('chat', data);
+    io.broadcast.emit('chat', data);
   });
 
   socket.on('typing', function(data){
