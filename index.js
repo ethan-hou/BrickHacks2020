@@ -9,7 +9,7 @@ var cors = require('cors');
 //   });
 
 // App setup
-http.listen(2020, function(){
+http.listen(process.env.PORT || 2020, function(){
     console.log('Server is listening to requests on port 2020')
   });
 
@@ -17,7 +17,7 @@ http.listen(2020, function(){
 app.use(express.static('public'));
 
 // Socket setup
-var io = socket('https://medievalrule.herokuapp.com/');
+var io = socket(http);
 players = {};
 
 io.on('connection', function(socket) {
