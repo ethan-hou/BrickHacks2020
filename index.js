@@ -14,7 +14,7 @@ http.listen(process.env.PORT || 2020, function(){
   });
 
 // Static files
-app.use(express.static('public'));
+app.use(express.static('./Chat/public'));
 
 // Socket setup
 var io = socket(http);
