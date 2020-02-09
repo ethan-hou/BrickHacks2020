@@ -17,7 +17,9 @@ http.listen(process.env.PORT || 2020, function(){
 app.use(express.static('./Chat/public'));
 
 // Socket setup
-var io = socket(http);
+var io = socket(http, {
+  origins: "https://medievalrule.herokuapp.com/"
+});
 players = {};
 
 io.on('connection', function(socket) {
