@@ -19,15 +19,18 @@ body{
   background-color: #493A37;
   margin: 4px;
   padding: 5px;
+  display: block;
+  float:left;
+  border-radius:15px;
 }
 
 .rolesBoxText{
   text-align: center;
   color:burlywood;
-  font-size: 25px;
+  font-size: 25px
 }
 
-.rolesBoxButton{
+.rolesBoxButton1{
   background-color: #6b1900;
   color:burlywood;
   text-decoration: none;
@@ -37,13 +40,208 @@ body{
   text-align: center;
   margin: 10px auto;
   transition-duration: 0.4s;
+  font-size:20px;
+  font-family:'Rye', cursive;
 }
 
-.rolesBoxButton:hover{
+.rolesBoxButton2{
+  background-color: #6b1900;
+  color:burlywood;
+  text-decoration: none;
+  border-style: solid;
+  border-radius:5px;
+  display:block;
+  text-align: center;
+  margin: 10px auto;
+  transition-duration: 0.4s;
+  font-size:20px;
+  font-family:'Rye', cursive;
+}
+.rolesBoxButton3{
+  background-color: #6b1900;
+  color:burlywood;
+  text-decoration: none;
+  border-style: solid;
+  border-radius:5px;
+  display:block;
+  text-align: center;
+  margin: 10px auto;
+  transition-duration: 0.4s;
+  font-size:20px;
+  font-family:'Rye', cursive;
+}
+
+.rolesBoxButton1:hover{
   background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.rolesBoxButton2:hover{
+  background-color: red;
+  color: white;
+}
+
+.rolesBoxButton3:hover{
+  background-color: #e8ce24;
   color: white;
 }
 
 .center{
   text-align: center
+}
+
+#description_King{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_Priest{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_Apothecary{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_Watchman{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_Warden{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_Knight{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_Peeler{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_Archer{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_Assassin{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_Framer{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_CultLeader{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
+}
+
+#description_MadHatter{
+  display: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 31%;
+  width: 250px;
+  background-color: #493A37;
+  margin: 4px;
+  padding: 5px;
+  float:left;
+  border-radius:15px;
 }
