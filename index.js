@@ -17,7 +17,7 @@ http.listen(2020, function(){
 app.use(express.static('public'));
 
 // Socket setup
-var io = socket(http);
+var io = socket('https://medievalrule.herokuapp.com/');
 players = {};
 
 io.on('connection', function(socket) {
