@@ -1,3 +1,5 @@
+var user_input = document.getElementById("name");
+
 var express = require('express');
 var socket = require('socket.io');
 
@@ -19,7 +21,7 @@ io.on('connection', (socket) => {
     console.log('made socket connection', socket.id);
 
     players[socket.id] = {
-        name: "test",
+        name: user_input,
         role: "reara"
     };
 
