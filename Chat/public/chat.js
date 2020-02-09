@@ -1,6 +1,6 @@
 // Make connection
 // replace with localhost when using locally
-var socket = io.connect('localhost:2020');
+var socket = io.connect('https://medievalrule.herokuapp.com:');
 
 
 // Query DOM
