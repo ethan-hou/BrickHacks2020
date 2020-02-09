@@ -3,7 +3,7 @@ var app = require('express')();
 var http = require('http').createServer(app);
 var socket = require('socket.io');
 var cors = require('cors');
-app.use(cors({origin: false}))
+app.use(cors({origin: "*:*"}))
 // app.get('/', function(req, res){
 //     res.send('<h1>Hello world</h1>');    
 //   });
