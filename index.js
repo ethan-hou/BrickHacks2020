@@ -23,7 +23,7 @@ app.use(express.static('./Chat/public'));
 
 // Socket setup
 var io = socket(http, {
-  origins: "https://medievalrule.herokuapp.com/"
+  origins: "https://medievalrule.herokuapp.com:*"
 });
 players = {};
 
