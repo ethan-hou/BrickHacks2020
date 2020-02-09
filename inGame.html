@@ -1,118 +1,286 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="inGame.css">
+    <link rel="stylesheet" type="text/css" href="inGame.css" />
     <script src="inGame.js"></script>
-    <h1 class="titleOfGame"> Medieval Rule </h1>
+    <h1 class="titleOfGame">Medieval Rule</h1>
 </head>
 
 <body>
     <!-- Role Box -->
     <div class="rolesBox">
-        <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Roles </h3>
+        <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;">
+            Roles
+        </h3>
         <div class="center">
-            <button onclick="myFunctionKing()" class="rolesBoxButton1"> King </button>
-            <button onclick="myFunctionPriest()" class="rolesBoxButton1"> Priest </button>
-            <button onclick="myFunctionApothecary()" class="rolesBoxButton1"> Apothecary </button>
-            <button onclick="myFunctionWatchman()" class="rolesBoxButton1"> Watchman </button>
-            <button onclick="myFunctionWarden()" class="rolesBoxButton1"> Warden </button>
-            <button onclick="myFunctionKnight()" class="rolesBoxButton1"> Knight </button>
-            <button onclick="myFunctionPeeler()" class="rolesBoxButton1"> Peeler </button>
-            <button onclick="myFunctionArcher()" class="rolesBoxButton1"> Archer </button>
-            <button onclick="myFunctionAssassin()" class="rolesBoxButton2"> Assassin </button>
-            <button onclick="myFunctionFramer()" class="rolesBoxButton2"> Framer </button>
-            <button onclick="myFunctionCultLeader()" class="rolesBoxButton2"> Cult Leader </button>
-            <button onclick="myFunctionMadHatter()" class="rolesBoxButton3"> Mad Hatter </button>
+            <button onclick="myFunctionKing()" class="rolesBoxButton1">King</button>
+            <button onclick="myFunctionPriest()" class="rolesBoxButton1">
+          Priest
+        </button>
+            <button onclick="myFunctionApothecary()" class="rolesBoxButton1">
+          Apothecary
+        </button>
+            <button onclick="myFunctionWatchman()" class="rolesBoxButton1">
+          Watchman
+        </button>
+            <button onclick="myFunctionWarden()" class="rolesBoxButton1">
+          Warden
+        </button>
+            <button onclick="myFunctionKnight()" class="rolesBoxButton1">
+          Knight
+        </button>
+            <button onclick="myFunctionPeeler()" class="rolesBoxButton1">
+          Peeler
+        </button>
+            <button onclick="myFunctionArcher()" class="rolesBoxButton1">
+          Archer
+        </button>
+            <button onclick="myFunctionAssassin()" class="rolesBoxButton2">
+          Assassin
+        </button>
+            <button onclick="myFunctionFramer()" class="rolesBoxButton2">
+          Framer
+        </button>
+            <button onclick="myFunctionCultLeader()" class="rolesBoxButton2">
+          Cult Leader
+        </button>
+            <button onclick="myFunctionMadHatter()" class="rolesBoxButton3">
+          Mad Hatter
+        </button>
         </div>
     </div>
     <!-- Description Of Role -->
     <!-- King -->
     <div class="container">
-      <div id="description_King">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> King </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "Ruler of all, as King your word is final."</p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span> +3 Votes</p>
-      </div>
-      <!-- Priest -->
-      <div id="description_Priest">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Priest </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "Blessed father, as Priest you purify the unholy."</p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span>Block another player's ability</p>
+        <div id="description_King">
+            <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;">
+                King
+            </h3>
+            <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
+                "Ruler of all, as King your word is final."
+            </p>
+            <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
+                <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability:
+          </span> +3 Votes
+            </p>
+        </div>
+        <!-- Priest -->
+        <div id="description_Priest">
+            <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;">
+                Priest
+            </h3>
+            <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
+                "Blessed father, as Priest you purify the unholy."
+            </p>
+            <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
+                <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span
+          >Block another player's ability
+        </p>
       </div>
       <!-- Apothecary -->
       <div id="description_Apothecary">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Apothecary </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "Savior of all, as Apothecary you save lives."</p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span> Choose a player to prevent them from dying this turn</p>
-      </div>
-      <div id="description_Watchman">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Watchman </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "A night wanderer, as Watchman you're the people's eyes."</p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span>See which player visits another player at night</p>
+        <h3
+          style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"
+        >
+          Apothecary
+        </h3>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          "Savior of all, as Apothecary you save lives."
+        </p>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          <span
+            style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;"
+            >Ability:
+          </span> Choose a player to prevent them from dying this turn
+            </p>
+        </div>
+        <div id="description_Watchman">
+            <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;">
+                Watchman
+            </h3>
+            <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
+                "A night wanderer, as Watchman you're the people's eyes."
+            </p>
+            <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
+                <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span
+          >See which player visits another player at night
+        </p>
       </div>
       <!-- Warden -->
       <div id="description_Warden">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Warden </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "People demand justice, as Warden you are justice."</p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span>In the morning you send a player to jail, at night you may execute them</p>
+        <h3
+          style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"
+        >
+          Warden
+        </h3>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          "People demand justice, as Warden you are justice."
+        </p>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          <span
+            style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;"
+            >Ability: </span
+          >In the morning you send a player to jail, at night you may execute
+          them
+        </p>
       </div>
       <!-- Knight -->
       <div id="description_Knight">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Knight </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "Honor in battle, as Knight you're the peoples sword and shield."</p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span> Pick a player to guard at night, if any other player tries to kill that guarded player, kill the killer but you die guarding them.</p>
-      </div>
-      <!-- Peeler -->
-      <div id="description_Peeler">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Peeler </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "No one is innocent, as Peeler you seek the truth."</p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span>Evil players come up as "Suspect" as well as "Framed" players, except Cult leaders. </p>
+        <h3
+          style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"
+        >
+          Knight
+        </h3>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          "Honor in battle, as Knight you're the peoples sword and shield."
+        </p>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          <span
+            style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;"
+            >Ability:
+          </span> Pick a player to guard at night, if any other player tries to kill that guarded player, kill the killer but you die guarding them.
+            </p>
+        </div>
+        <!-- Peeler -->
+        <div id="description_Peeler">
+            <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;">
+                Peeler
+            </h3>
+            <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
+                "No one is innocent, as Peeler you seek the truth."
+            </p>
+            <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
+                <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span
+          >Evil players come up as "Suspect" as well as "Framed" players, except
+          Cult leaders.
+        </p>
       </div>
       <!-- Archer -->
       <div id="description_Archer">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Archer </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "Pierce all evil, as Archer you strike down foes." </p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span>Choose a player to kill at night, if they're innocent the next day you die from guilt </p>
+        <h3
+          style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"
+        >
+          Archer
+        </h3>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          "Pierce all evil, as Archer you strike down foes."
+        </p>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          <span
+            style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;"
+            >Ability: </span
+          >Choose a player to kill at night, if they're innocent the next day
+          you die from guilt
+        </p>
       </div>
       <!-- Assassin -->
       <div id="description_Assassin">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Assassin </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "The dark knight, as Assassin you kill for the cult." </p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span>Kill a player at night chosen by the Cult Leader, if the Cult Leader is "Jailed", you choose who to kill </p>
+        <h3
+          style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"
+        >
+          Assassin
+        </h3>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          "The dark knight, as Assassin you kill for the cult."
+        </p>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          <span
+            style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;"
+            >Ability: </span
+          >Kill a player at night chosen by the Cult Leader, if the Cult Leader
+          is "Jailed", you choose who to kill
+        </p>
       </div>
       <!-- Framer -->
       <div id="description_Framer">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Framer </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "A miscreant, as Framer you mislead the town." </p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span>"Frame" another player as evil</p>
+        <h3
+          style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"
+        >
+          Framer
+        </h3>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          "A miscreant, as Framer you mislead the town."
+        </p>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          <span
+            style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;"
+            >Ability: </span
+          >"Frame" another player as evil
+        </p>
       </div>
       <!-- Cult Leader -->
       <div id="description_CultLeader">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Cult Leader </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "The root of all evil, as Cult Leader you command death." </p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span>Choose who the assassin kills at night </p>
+        <h3
+          style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"
+        >
+          Cult Leader
+        </h3>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          "The root of all evil, as Cult Leader you command death."
+        </p>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          <span
+            style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;"
+            >Ability: </span
+          >Choose who the assassin kills at night
+        </p>
       </div>
       <!-- Mad Hatter -->
       <div id="description_MadHatter">
-          <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Mad Hatter </h3>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"> "Insanity Incarnate, as Mad Hatter you want death to all." </p>
-          <p style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;">
-              <span style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;">Ability: </span>Choose who to kill at night </p>
+        <h3
+          style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"
+        >
+          Mad Hatter
+        </h3>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          "Insanity Incarnate, as Mad Hatter you want death to all."
+        </p>
+        <p
+          style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:burlywood;"
+        >
+          <span
+            style="font-family:'Rye', cursive; text-align:center; font-size: 20px; color:red;"
+            >Ability: </span
+          >Choose who to kill at night
+        </p>
       </div>
 
       <div class="chat">
-        <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Chat </h3>
+        <h3
+          style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"
+        >
+          Chat
+        </h3>
       </div>
     </div>
     <!-- Characters/Animation-->
@@ -126,19 +294,23 @@
     <div> -->
 
     <div class="playerList">
-      <h3 style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"> Players </h3>
-      <button class="buttonList"> KT1 </button>
-      <button class="buttonList"> KT2 </button>
-      <button class="buttonList"> KT3 </button>
-      <button class="buttonList"> KT4 </button>
-      <button class="buttonList"> KT5 </button>
-      <button class="buttonList"> KT6 </button>
-      <button class="buttonList"> KT7 </button>
-      <button class="buttonList"> KT8 </button>
-      <button class="buttonList"> KT9 </button>
-      <button class="buttonList"> KT10 </button>
-      <button class="buttonList"> KT11 </button>
-      <button class="buttonList"> KT12 </button>
+      <h3
+        style="font-family:'Rye', cursive; text-align:center; font-size: 30px; color:burlywood;"
+      >
+        Players
+      </h3>
+      <button class="buttonList">PLAYER1</button>
+      <button class="buttonList">PLAYER2</button>
+      <button class="buttonList">PLAYER3</button>
+      <button class="buttonList">PLAYER4</button>
+      <button class="buttonList">PLAYER5</button>
+      <button class="buttonList">PLAYER6</button>
+      <button class="buttonList">PLAYER7</button>
+      <button class="buttonList">PLAYER8</button>
+      <button class="buttonList">PLAYER9</button>
+      <button class="buttonList">PLAYER10</button>
+      <button class="buttonList">PLAYER11</button>
+      <button class="buttonList">PLAYER12</button>
     </div>
   </body>
 </html>
