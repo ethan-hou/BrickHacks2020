@@ -3,7 +3,7 @@ var app = require('express')();
 var http = require('http').createServer(app);
 var socket = require('socket.io');
 var cors = require('cors');
-app.use(cors({origin: "medievalrule.herokuapp.com"}))
+// app.use(cors({origin: "medievalrule.herokuapp.com"}))
 // app.get('/', function(req, res){
 //     res.send('<h1>Hello world</h1>');    
 //   });
@@ -17,9 +17,7 @@ http.listen(process.env.PORT || 2020, function(){
 app.use(express.static('./Chat/public'));
 
 // Socket setup
-var io = socket(http, {
-  origins: "https://medievalrule.herokuapp.com/"
-});
+var io = socket(http);
 players = {};
 
 io.on('connection', function(socket) {

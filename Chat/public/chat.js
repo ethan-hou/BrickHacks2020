@@ -1,6 +1,7 @@
 // Make connection
 // replace with localhost when using locally
-var socket = io.connect('https://medievalrule.herokuapp.com');
+var socket = io.connect('https://medievalrule.herokuapp.com:');
+
 
 // Query DOM
 var message = document.getElementById('message'),
@@ -21,6 +22,7 @@ btn.addEventListener('click', function(){
 message.addEventListener('keypress', function(){
   socket.emit('typing', handle.value);
 });
+
 
 // Listen for events
 socket.on('chat', function(data){
